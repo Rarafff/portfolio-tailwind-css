@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+.hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-[#010C80] duration-300 ease-in-out
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply origin-top-left rotate-45;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply origin-bottom-left -rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
